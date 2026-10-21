@@ -98,7 +98,7 @@ Instructietekst:
 - [ ] De lespagina staat online en het adres op dia 9 klopt.
 - [ ] De opdracht staat in de drie klassen, met twee bijlagen (de link en het werkdocument).
 - [ ] Een testleerling krijgt een eigen kopie van het werkdocument, met de eigen naam in de titel.
-- [ ] **Test met een leerlingaccount of `@` de pdf uit les 04 voorstelt** (zie § 8): klik in het vak *Bijlage* van het werkdocument, typ `@TV3`.
+- [x] `@` stelt een pdf uit Drive voor en maakt er een chip van, ook in een tabelcel (getest met demoleerling3, 21-10-2026; § 2b).
 - [ ] Les 11 is in die klas gegeven (dia 2 haalt er een vraag uit op); zo niet: sla dia 2 over. Kijk in de app *Na de les* of er over les 11 iets bij te sturen is.
 - [ ] Vier kaartjes (A5) voor het rollenspel op dia 5: *Lotte*, *Tom*, *Lina*, *Emre*.
 - [ ] De Dalton-lesfiche staat in je planner (open `dalton-lesfiche.html`, klik op **Kopieer de fiche**, plak).
@@ -109,7 +109,7 @@ Instructietekst:
 | Handeling | Klikpad / naam | Bron |
 |---|---|---|
 | Werkdocument openen | in de opdracht rechts bij **Jouw werk** op de naam klikken | `_afspraken/klikpaden.md` |
-| Een bijlage als chip toevoegen | in het vak **Bijlage** `@` typen, een stuk van de bestandsnaam typen (*TV3*), het bestand in de lijst kiezen: er komt een **chip** | [Documenten-help 10710316](https://support.google.com/docs/answer/10710316?hl=nl) (*Smartchips invoegen*), gelezen 21-10-2026. **Niet getest:** de help noemt bij bestanden alleen Documenten, Spreadsheets en Presentaties; of `@` ook een **pdf** in Drive voorstelt, is niet nagekeken (zie § 8). Uitweg op de pagina: de naam typen |
+| Een bijlage als chip toevoegen | in het vak **Bijlage** `@` typen, een stuk van de bestandsnaam typen (*TV3*), het bestand in de lijst kiezen: er komt een **chip** | [Documenten-help 10710316](https://support.google.com/docs/answer/10710316?hl=nl) (*Smartchips invoegen*), gelezen 21-10-2026, en **getest met demoleerling3 op 21-10-2026** (een test-pdf *Demo Leerling - TV3_Documentopmaak.pdf* in Drive, daarna naar de prullenbak): `@TV3` toont onder **Bestanden** de pdf met een **rood pdf-icoon** (ook als *TV3* midden in de naam staat), daaronder **Plaatsen** van Google Maps (*TV3* in Spanje, Ghana …). Klikken geeft een chip, ook in een tabelcel; in een smal vak wordt de naam afgekort met *…*. In de Drive van een echte leerling staat ook het Google-document van les 04 met dezelfde naam (blauw icoon): de pagina zegt *kies het rode pdf-icoon*. Uitweg: de naam typen |
 | Inleveren | **Inleveren** › venster **Je werk inleveren?** › **Inleveren** › status **Ingeleverd** | [Classroom 6020285](https://support.google.com/edu/classroom/answer/6020285?hl=nl); het venster gezien met demoleerling3 (15-10-2026) |
 | Opnieuw inleveren (Extra) | **Ongedaan maken**, daarna weer **Inleveren** | zelfde bron en dezelfde proef |
 
@@ -235,7 +235,7 @@ Maakt `CO2_Aan-CC-BCC-en-een-bijlage.docx` opnieuw. Vereist `python-docx` en `Pi
 
 ## 8. Wat nog moet blijken in de klas
 
-- **De chip (`@`) met een pdf.** De Google-help (10710316, gelezen 21-10-2026) noemt bij `@` alleen bestanden van Documenten, Spreadsheets en Presentaties. Of een **pdf** uit Drive in de lijst staat, is **niet getest**: de lesbouwer kon het testaccount (demoleerling3) niet gebruiken omdat de Chrome-extensie van dat profiel niet verbonden was. Test vóór de les met een leerlingaccount: klik in het vak *Bijlage*, typ `@TV3`. Staat de pdf er niet, dan is de uitweg *typ de naam* (staat op de pagina, in de theoriekaart en op dia 6); pas dan de handeling in stap 3 aan en zeg het in de les. Wat de chip toont (de volledige bestandsnaam met de naam van de leerling), is ook niet gezien.
+- **De chip (`@`) met een pdf: getest met demoleerling3 op 21-10-2026** (§ 2b): de pdf staat in de lijst en wordt een chip, ook in een tabelcel. Wat nog moet blijken: kiezen de leerlingen de **pdf** (rood icoon) en niet het Google-document van les 04 met dezelfde naam (blauw icoon) of een plaats van Google Maps? En wat leest de verbetertool uit een chip (de naam van het bestand, verwacht)?
 - **Staat de pdf uit les 04 in de Drive van de leerling?** Ze voegden ze toe via *Jouw werk* › *Toevoegen of maken* › *Bestand*; wie ze niet maakte of niet inleverde, heeft ze niet. Hoeveel leerlingen typen de naam?
 - **Haalbaarheid in 40 minuten.** Stap 4 (12 minuten) vraagt zes stukken tekst, plus de feiten lezen; les 11 was al krap. Zakt het tempo, dan is de minimumroute de uitweg.
 - **Copy/paste van de feiten.** Lezen ze de feiten per bouwsteen, en schrijven ze nog eigen zinnen? (*Mag je overnemen* is nieuw in ORLO.)
