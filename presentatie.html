@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aan, CC, BCC en een bijlage · dia's · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    .compact .two { flex: 0 0 auto; }
+    .compact .panel p { margin-bottom: 10px; }
+    .compact .panel p:last-child { margin-bottom: 0; }
+    .qhead { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+    .qcol .opt { font-size: 26px; padding: 8px 16px; }
+    .qcol .opt .n { width: 46px; height: 46px; font-size: 24px; }
+    .klok { font-size: 22px; color: #4D5573; }
+    .steps1 { margin: 0; padding-left: 1.2em; }
+    .steps1 li { font-size: 27px; margin-bottom: 14px; }
+    .steps1 li:last-child { margin-bottom: 0; }
+    .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 10px; color: var(--navy-deep); }
+    .rood { color: #A0372A; font-weight: 700; }
+    .groen { color: #1F7A55; font-weight: 700; }
+    .vond { list-style: none; padding: 0 !important; margin: 0 0 14px; display: grid; gap: 12px; }
+    .vond li { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 10px 18px; font-size: 26px !important; margin: 0 !important; line-height: 1.3; }
+    .vond .nr { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 24px; display: flex; align-items: center; justify-content: center; }
+    /* een nagemaakt venster Nieuw bericht (kijk naar de mail van Tom) */
+    .dmail { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; font-size: 23px; color: #202124; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .dm-kop { background: #F2F6FC; font-weight: 700; font-size: 20px; padding: 8px 18px; }
+    .dm-veld { display: flex; gap: 14px; padding: 8px 18px; border-bottom: 1px solid #E3E3E3; font-size: 21px; }
+    .dm-veld span { color: #5F6368; min-width: 120px; }
+    .dm-veld .leeg { color: #A0372A; font-style: italic; }
+    .dm-tekst { padding: 14px 18px 4px; }
+    .dm-tekst p { margin: 0 0 12px !important; font-size: 23px !important; line-height: 1.3 !important; }
+    /* de zes bouwstenen: een nummer en de naam links, wat erin staat rechts */
+    .dbouw { background: #fff; border: 2px solid #9AA0A6; border-radius: 12px 12px 6px 6px; overflow: hidden; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .db-kop { background: #F2F6FC; font-weight: 700; font-size: 21px; padding: 6px 18px; }
+    .db-veld { display: flex; gap: 14px; padding: 6px 18px; border-bottom: 1px solid #E3E3E3; font-size: 22px; color: #5F6368; }
+    .db-veld span { min-width: 150px; }
+    .db-rij { display: grid; grid-template-columns: 290px 1fr; gap: 16px; align-items: center; padding: 10px 18px; border-bottom: 1px dashed #D6D5CB; }
+    .db-rij:last-child { border-bottom: 0; }
+    .db-naam { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--navy-deep); font-size: 27px; }
+    .db-naam b { flex: none; width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 23px; }
+    .db-tekst { font-size: 26px; color: #202124; line-height: 1.2; }
+    .ondw { background: #fff; border: 3px solid var(--navy); border-radius: 12px; padding: 8px 16px; margin: 0; font-family: Arial, sans-serif; font-size: 24px !important; line-height: 1.25 !important; }
+    .ondw .lblk { display: block; font-size: 18px; color: #5F6368; margin-bottom: 2px; }
+    .ondw.slecht { border-color: #A0372A; }
+    .ondw.goed { border-color: var(--ok); }
+    .groot { font-size: 30px !important; }
+    .markeer { background: #FCD6CF; border-radius: 6px; padding: 0 8px; font-weight: 700; }
+    /* les 12: wie ziet welk adres, en de bijlage als chip */
+    .dmail .dm-veld.rij { align-items: flex-start; }
+    .dm-veld .lijn { display: block; line-height: 1.25; }
+    .dm-veld b { font-weight: 400; }
+    .kaartjes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .kaartje { background: #fff; border: 3px solid var(--navy); border-radius: 14px; padding: 10px 14px; font-size: 24px; line-height: 1.2; }
+    .kaartje b { display: block; font-size: 26px; color: var(--navy-deep); }
+    .kaartje span { font-size: 19px; color: #5F6368; word-break: break-all; }
+    .pdf { display: flex; align-items: center; gap: 16px; background: #fff; border: 2px solid #9AA0A6; border-radius: 14px; padding: 16px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 25px; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .pdf .tag { flex: none; background: #D93025; color: #fff; border-radius: 6px; font-size: 22px; font-weight: 700; padding: 6px 10px; }
+    .pdf small { display: block; font-size: 20px; color: #5F6368; }
+    .regel3 { list-style: none; padding: 0 !important; margin: 0; display: grid; gap: 10px; }
+    .regel3 li { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 10px 18px; font-size: 27px !important; margin: 0 !important; line-height: 1.25; }
+    .regel3 .w { font-weight: 700; color: var(--navy-deep); font-size: 30px; }
+    .dsug { margin: 8px 0 0 150px; width: 520px; border: 2px solid #DADCE0; border-radius: 10px; background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 22px; overflow: hidden; box-shadow: 0 8px 24px rgba(29,35,64,.15); }
+    .dsug div { padding: 8px 16px; }
+    .dsug .k { background: #F8F9FA; color: #5F6368; font-size: 19px; font-weight: 700; }
+    .dsug .a { background: #E8F0FE; }
+    .dchip { display: inline-flex; align-items: center; gap: 10px; border: 2px solid #DADCE0; border-radius: 99px; padding: 4px 16px 4px 6px; background: #fff; font-size: 22px; }
+    .dchip b { background: #D93025; color: #fff; border-radius: 99px; font-size: 17px; padding: 3px 10px; }
+    .oogrij { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .oog { background: #fff; border: 3px solid var(--navy); border-radius: 14px; padding: 10px 12px; text-align: center; font-size: 24px; line-height: 1.2; }
+    .oog b { display: block; font-size: 30px; color: var(--navy-deep); margin-bottom: 4px; }
+    .oog svg { width: 52px; height: 52px; fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .oog.bcc { border-color: #A0372A; }
+    .oog.bcc svg { stroke: #A0372A; }
+  </style>
+</head>
+<body>
+<div class="hud"><span id="counter"></span> · <kbd>→</kbd> verder · <kbd>F</kbd> volledig scherm · <kbd>N</kbd> notities</div>
+<div class="deck"><div class="stage">
+
+<!-- 1 · vaste startdia -->
+<section class="slide start">
+  <div class="start-kop">
+    <div>
+      <p class="kicker">Toegepaste Informatica · les 12</p>
+      <h1>Aan, CC, BCC en een bijlage</h1>
+    </div>
+    <span class="start-zo">Zo start je</span>
+  </div>
+  <ol class="startroute">
+    <li><div class="sr-beeld"><div class="pc-scherm"><span class="pc-avatar"></span><span class="pc-veld">••••••</span></div><div class="pc-voet"></div></div><span class="sr-tekst">Meld je aan op de computer.</span></li>
+    <li><div class="sr-beeld"><span class="url-balk"><img class="logo" src="assets/logos/classroom.svg" alt="">classroom.google.com</span><span class="url-knop">Inloggen</span></div><span class="sr-tekst">Ga in Chrome naar Classroom. Klik op <span class="knop">Inloggen</span>.</span></li>
+    <li><div class="sr-beeld"><span class="login-veld">…<b>@dalton.gent</b></span><span class="login-veld">••••••••</span></div><span class="sr-tekst">Log in met je schoolaccount.</span></li>
+    <li><div class="sr-beeld"><div class="lesgroep"><span class="lesgroep-kop">… 2027 - Informatica</span></div></div><span class="sr-tekst">Klik op je klas: 3ORLO, 4ORLOa of 4ORLOb.</span></li>
+    <li><div class="sr-beeld"><div class="tabs"><span class="tab-grijs"></span><span class="tab-aan">Schoolwerk</span><span class="tab-grijs"></span></div></div><span class="sr-tekst">Klik op <span class="knop">Schoolwerk</span>.</span></li>
+    <li><div class="sr-beeld"><span class="opdr-rij"><span class="opdr-ic"></span>Communicatie 2 — Aan, CC, BCC…</span><span class="opdr-link">Instructies bekijken</span></div><span class="sr-tekst">Klik op de opdracht › <span class="knop">Instructies bekijken</span>.</span></li>
+    <li><div class="sr-beeld"><span class="bijl-chip aan"><img class="logo" src="assets/logos/lespagina.webp" alt="">Les 12 · Aan, CC, BCC en een bijlage</span></div><span class="sr-tekst">Klik op de lespagina.</span></li>
+    <li class="klaar">Klaar? Laat de lespagina open en kijk naar het bord.</li>
+  </ol>
+  <template class="note">
+    <p><strong>Lesstart (0–1'). De vaste startdia</strong> (sinds 09-10-2026, elke les dezelfde, voor alle klassen). Laat ze op het bord staan terwijl de leerlingen aanmelden.</p>
+    <p>Het <strong>wachtwoord van de computers</strong> staat niet op de dia: de dia's staan openbaar online. Zeg het, of schrijf het op het bord.</p>
+    <p>Ga verder als de meesten de lespagina open hebben.</p>
+  </template>
+</section>
+
+<!-- 2 · lesstart: ophalen uit les 11 -->
+<section class="slide met-mascotte" data-answer>
+  <img class="mascotte" src="assets/mascotte/dalton_denken.webp" alt="" width="240" height="240">
+  <p class="kicker">Lesstart · 3 minuten</p>
+  <h2>Weet je het nog?</h2>
+  <div class="two" style="grid-template-columns: 1fr 330px">
+    <div class="panel">
+      <p class="lbl">Les 11 · de zakelijke e-mail · de zes bouwstenen</p>
+      <ol class="steps1" style="padding-left:1.4em">
+        <li style="font-size:26px;margin-bottom:8px">Aanspreking</li>
+        <li style="font-size:26px;margin-bottom:8px">Inleiding</li>
+        <li style="font-size:26px;margin-bottom:8px">De vraag</li>
+        <li style="font-size:26px;margin-bottom:8px"><span class="markeer">&nbsp;?&nbsp;&nbsp;?&nbsp;</span></li>
+        <li style="font-size:26px;margin-bottom:8px">Slotgroet</li>
+        <li style="font-size:26px;margin-bottom:0">Handtekening</li>
+      </ol>
+    </div>
+    <div class="qcol">
+      <p class="qhead">Wat hoort op de lege plaats?</p>
+      <div class="opts">
+        <div class="opt right"><span class="n">A</span>Slot</div>
+        <div class="opt"><span class="n">B</span>Bijlage</div>
+        <div class="opt"><span class="n">C</span>Onderwerp</div>
+      </div>
+    </div>
+  </div>
+  <p class="answer">Het slot: tegen wanneer je een antwoord wil, en bedanken. Het onderwerp staat boven de mail.</p>
+  <template class="note">
+    <p><strong>Lesstart (3'), ophalen uit les 11.</strong> De zes bouwstenen staan er, met één lege plaats. Iedereen antwoordt tegelijk met vingers: 1, 2 of 3 vingers voor A, B of C. Druk daarna op → voor het antwoord.</p>
+    <p>Wie B kiest: <em>"Een bijlage is een bestand dat je meestuurt, geen deel van je tekst. Daar komen we zo op terug."</em> Wie C kiest: <em>"Waar staat het onderwerp: in je tekst of erboven?"</em></p>
+    <p><strong>De brug naar vandaag</strong>: <em>"Toms mail is vertrokken. Vandaag mailt Lotte niet naar één persoon, maar naar vijf mensen tegelijk, met een bijlage."</em></p>
+  </template>
+</section>
+
+<!-- 3 · lesdoel -->
+<section class="slide met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_wijzen_links.webp" alt="" width="240" height="240">
+  <p class="kicker">Ik doe · dia 1 van 4</p>
+  <h2>Wat kan je straks?</h2>
+  <ul class="rules">
+    <li>Je kiest wie in <strong>Aan, Cc of Bcc</strong> komt, en je zegt waarom.</li>
+    <li>Je legt uit <strong>wie welk adres ziet</strong> als er mensen in Bcc staan.</li>
+    <li>Je schrijft een <strong>zakelijke groepsmail</strong> met de juiste ontvangers, een precies onderwerp en een bijlage.</li>
+  </ul>
+  <p class="klok" style="margin-top:6px">Ik leg 5 minuten uit. Daarna werk jij zelfstandig met de lespagina, en kom ik bij jou langs.</p>
+  <template class="note">
+    <p><strong>Ik doe, 0'30".</strong> Lesdoel voorlezen, niet toelichten. Zeg er meteen bij dat de uitleg maar vijf minuten duurt en dat alles daarna op de lespagina staat. Zeg ook: <em>"Er wordt vandaag niets echt verstuurd. Je schrijft de mail in je werkdocument."</em></p>
+  </template>
+</section>
+
+<!-- 4 · de situatie -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 2 van 4 · kijk naar wie de mail krijgt</p>
+  <h2 style="margin-bottom:14px">Lotte mailt vijf jobstudenten</h2>
+  <div class="two" style="grid-template-columns: 1.15fr 0.9fr; align-items: start">
+    <ul class="vond">
+      <li><span class="nr">1</span><span><strong>Lotte Maes</strong> van de personeelsdienst schrijft de mail.</span></li>
+      <li><span class="nr">2</span><span>Vijf nieuwe <strong>jobstudenten</strong>: ze kennen elkaar niet.</span></li>
+      <li><span class="nr">3</span><span><strong>Tom</strong>, hun verantwoordelijke, krijgt een kopie. Hij moet niets doen.</span></li>
+      <li><span class="nr">4</span><span>Erbij: de <strong>onthaalbrochure</strong>, jouw pdf uit les 04.</span></li>
+    </ul>
+    <div>
+      <p class="lbl">De bijlage</p>
+      <div class="pdf"><span class="tag">PDF</span><span>TV3_Documentopmaak - …<small>de onthaalbrochure, uit les 04</small></span></div>
+    </div>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 1'.</strong> Vertel de situatie in eigen woorden: <em>"In december beginnen vijf jobstudenten bij NovaDepot. Lotte van de personeelsdienst mailt hen de onthaalbrochure. Die brochure maakte jullie in les 04, als pdf. De jobstudenten kennen elkaar niet. Tom is hun verantwoordelijke in het magazijn: hij krijgt de mail in kopie."</em></p>
+    <p><strong>Zeg wat je moet zien</strong>: links de vier personen en dingen, rechts de pdf die als bijlage meegaat. De adressen zijn verzonnen (<em>.example</em> bestaat nooit echt).</p>
+  </template>
+</section>
+
+<!-- 5 · rollenspel: wie ziet welk adres? -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 3 van 4 · rollenspel · kijk naar Aan, Cc en Bcc</p>
+  <h2 style="margin-bottom:12px">Wie ziet welk adres?</h2>
+  <div class="two" style="grid-template-columns: 1.25fr 0.9fr; align-items: start">
+    <div class="dmail">
+      <div class="dm-kop">Nieuw bericht · de mail van Lotte</div>
+      <div class="dm-veld"><span>Aan</span><em class="leeg">(leeg)</em></div>
+      <div class="dm-veld"><span>Cc</span>tom.peeters@…</div>
+      <div class="dm-veld rij"><span>Bcc</span><i class="lijn" style="font-style:normal">lina.haddad@…<br>emre.yilmaz@…<br>noor.verbeke@…<br>kobe.desmet@…<br>ayla.janssens@…</i></div>
+    </div>
+    <div class="kaartjes">
+      <div class="kaartje"><b>Lotte</b><span>schrijft de mail</span></div>
+      <div class="kaartje"><b>Tom</b><span>in Cc</span></div>
+      <div class="kaartje"><b>Lina</b><span>in Bcc</span></div>
+      <div class="kaartje"><b>Emre</b><span>in Bcc</span></div>
+    </div>
+  </div>
+  <div class="panel reveal-item" style="margin-top:14px">
+    <div class="oogrij">
+      <div class="oog"><b>Aan</b><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><br>moet iets doen</div>
+      <div class="oog"><b>Cc</b><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><br>moet het weten</div>
+      <div class="oog bcc"><b>Bcc</b><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></svg><br>mag de adressen van de anderen niet zien</div>
+    </div>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 2'. Rollenspel <em>Wie ziet welk adres?</em></strong> Vier leerlingen komen vooraan of blijven zitten met een kaartje (A5, zelf schrijven): Lotte, Tom, Lina, Emre. Toon de mail van Lotte: <em>Aan</em> leeg, <em>Cc</em> Tom, <em>Bcc</em> Lina en Emre (en nog drie anderen).</p>
+    <p>Vraag aan Lina: <em>"Zie jij het adres van Tom? En dat van Emre?"</em> (Tom: ja. Emre: nee.) Vraag aan Tom: <em>"Weet jij wie de mail nog kreeg?"</em> (Hij ziet alleen Lotte en zichzelf: de jobstudenten staan in Bcc.) Vraag aan Lotte: <em>"Waarom doe je dat?"</em></p>
+    <p><strong>Een nieuw soort tekening, lees ze hardop voor</strong>: drie vakjes, Aan, Cc en Bcc. Een open oog betekent: iedereen ziet dit adres. Een doorgestreept oog betekent: niemand ziet de andere adressen in dit vak. Druk op →.</p>
+    <p>Denk dan hardop bij rij 1 van deel 1: <em>"Tom vraagt Kim Wouters om een levering te verplaatsen. Moet zij iets doen? Ja. Dus Aan."</em> Zeg: <em>Aan = moet iets doen. Cc = moet het weten. Bcc = mag de adressen van de anderen niet zien.</em></p>
+  </template>
+</section>
+
+<!-- 6 · demo: de bijlage als chip -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 4 van 4 · demo: de bijlage · kijk naar het vak Bijlage</p>
+  <h2 style="margin-bottom:12px">De bijlage in je werkdocument</h2>
+  <ol class="regel3">
+    <li><span class="w">1 · @</span><span>Klik in het vak <strong>Bijlage</strong> en typ <strong>@</strong>, en dan <strong>TV3</strong>.</span></li>
+  </ol>
+  <div class="dsug reveal-item"><div class="k">@TV3</div><div class="a"><span class="dchip" style="border:0;padding:0"><b>PDF</b></span> TV3_Documentopmaak - …</div></div>
+  <ol class="regel3 reveal-item" style="margin-top:12px">
+    <li><span class="w">2 · Kies</span><span>Klik je pdf in de lijst: er komt een <span class="dchip"><b>PDF</b>TV3_Documentopmaak - …</span></span></li>
+    <li><span class="w">3 · Zeg het</span><span>Schrijf in je tekst dat er een bijlage is: <em>In de bijlage vindt u …</em></span></li>
+  </ol>
+  <template class="note">
+    <p><strong>Ik doe, 1'30". Demo van de chip</strong> (het enige technische dat nieuw is). Open een eigen Google-document, klik in een vak, typ <strong>@</strong> en een stuk van de naam van een pdf in je Drive, en kies ze: er komt een chip. Of toon alleen deze tekening. <strong>Lees de tekening de eerste keer hardop voor</strong>: de lijst met suggesties verschijnt onder het vak; de blauwe regel is je pdf.</p>
+    <p>Zeg: <em>"Vind je je pdf niet? Typ dan de naam van het bestand."</em> En: <em>"En in je tekst schrijf je dat er een bijlage is. Zit ze er echt bij? Kijk dat altijd na."</em></p>
+    <p>Wie de pdf uit les 04 niet heeft of niet vindt: de naam typen telt even goed. Jonas helpt niet zoeken in Drive.</p>
+  </template>
+</section>
+
+<!-- 7 · controle -->
+<section class="slide " data-answer>
+  <p class="kicker">Controle · iedereen antwoordt</p>
+  <h2>Wie ziet welk adres?</h2>
+  <div class="qcol">
+    <p class="qhead">Noor staat in Bcc. Ziet ze het adres van Kobe, die ook in Bcc staat?</p>
+    <div class="opts">
+      <div class="opt"><span class="n">A</span>Ja</div>
+      <div class="opt right"><span class="n">B</span>Nee</div>
+    </div>
+  </div>
+  <p class="answer">Nee. Wie in Bcc staat, ziet Aan en Cc, maar niet de andere adressen in Bcc.</p>
+  <template class="note">
+    <p><strong>Controle (1'). Iedereen antwoordt tegelijk</strong>: 1 of 2 vingers voor A of B. Kijk rond en onthoud wie A toont.</p>
+    <p>Wie A kiest: <em>"Waarom zet Lotte de jobstudenten in Bcc? Wat is het verschil met Cc?"</em> Tip: ga terug naar de tekening met de ogen.</p>
+    <p>Druk op → voor het antwoord. Wie A toonde, komt zo meteen 3 tot 5 minuten bij je.</p>
+  </template>
+</section>
+
+<!-- 8 · iedereen doet stap 1 -->
+<section class="slide ">
+  <p class="kicker">Samen · 3 minuten</p>
+  <h2>Iedereen doet stap 1</h2>
+  <div class="panel">
+    <ol class="steps1">
+      <li>Open de lespagina. Klik op <strong>Stap 1 · Klaarzetten</strong>.</li>
+      <li>Open je werkdocument en lees het kader: wie krijgt de mail, wie moet het alleen weten, en wat moet erin?</li>
+      <li>Klaar? Steek je <strong>duim</strong> op.</li>
+    </ol>
+  </div>
+  <template class="note">
+    <p><strong>Samen (3').</strong> Iedereen doet stap 1 tegelijk. Loop rond en kijk naar de schermen: het werkdocument open, met de naam van de leerling in de titel?</p>
+    <p>Duim op bij de meesten: ga naar de volgende dia. Wie op de controlevraag fout had of hier vastloopt, blijft 3 tot 5 minuten bij je. De rest begint aan stap 2.</p>
+    <p>Zeg één zin over <em>Toon stapjes</em>: <em>"Weet je niet hoe het moet? Klik op Toon stapjes, dan zie je elk klein stapje met een beeld."</em> En: <em>"Typ je mail in je werkdocument, in de lichtblauwe vakken."</em></p>
+  </template>
+</section>
+
+<!-- 9 · zo werk je verder -->
+<section class="slide compact met-mascotte">
+  <img class="mascotte" src="assets/mascotte/dalton_laptop.webp" alt="" width="240" height="240">
+  <p class="kicker">Keuzewerktijd · <span class="eindtijd">40 minuten</span></p>
+  <h2>Zo werk je verder</h2>
+  <div class="two" style="grid-template-columns: 1.6fr 1fr">
+    <div>
+      <ol class="steps1 kloklijst" data-lesmomenten="2026-10-27/14.35/15.25/4ORLOb/8;2026-10-27/15.25/16.15/3ORLO/9;2026-10-28/11.15/12.05/4ORLOa/4" data-beltijden="8.25-9.15 9.15-10.05 10.25-11.15 11.15-12.05 12.05-12.55 13.45-14.35 14.35-15.25 15.25-16.15 16.15-17.05">
+        <li data-min="3" data-samen>Klaarzetten <span class="klok tijd">samen &#10003;</span></li>
+        <li data-min="9">Aan, Cc of Bcc? <span class="klok tijd">9'</span></li>
+        <li data-min="8">De adressen en de bijlage <span class="klok tijd">8'</span></li>
+        <li data-min="12">De tekst van de mail <span class="klok tijd">12'</span></li>
+        <li data-min="8">Nalezen en inleveren <span class="klok tijd">8'</span></li>
+      </ol>
+    </div>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Vast?</strong></p>
+      <p style="font-size:26px">1. <em>Toon stapjes</em><br>2. Je buur<br>3. Ik</p>
+      <p style="margin-top:14px;font-size:22px">Vink af in de <strong>checklist</strong>.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:18px;font-size:25px">
+    <strong>Alles staat in de opdracht in <span class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</span></strong> <em>Communicatie 2 — Aan, CC, BCC en een bijlage</em>: de lespagina en je werkdocument.
+    Je levert alleen je <strong>werkdocument</strong> in.<br>Adres: jonasdaltongent.github.io/Groepsmail-NovaDepot/<!-- PAS AAN --></p>
+  <template class="note">
+    <p><strong>Keuzewerktijd.</strong> Laat deze dia staan zolang ze werken. <strong>De kloktijden</strong> komen uit de planning: buiten de les toont de dia de uren van het geplande lesmoment (met de dag en de klas erbij); tijdens dat lesmoment rekent ze vanaf nu tot de bel, min 1 minuut voor de exitvraag. Stap 1 is al samen gedaan (dia 8). Te vroeg getoond, of geef je de les op een ander uur? Druk op <strong>T</strong>.</p>
+    <p>Eerste rondgang: heeft iedereen het <strong>eigen</strong> werkdocument open (de naam in de titel)? Tweede rondgang, rond stap 3: staan de jobstudenten in <strong>Bcc</strong> en Tom in <strong>Cc</strong>? Zit er een <strong>bijlage</strong> in het vak?</p>
+    <p>Denkvragen: <em>"Wie moet iets doen na deze mail? Wie moet het alleen weten?"</em> · <em>"Kan Lina het adres van Emre zien? Waarom niet?"</em> · <em>"Hoe weten de jobstudenten dat er een bijlage is?"</em></p>
+    <p>Wie vastzit bij de chip: <em>"Typ de naam van het bestand."</em> Wie niet klaar raakt: minimumroute = deel 1, deel 3 (ontvangers, bijlage en boodschap) en inleveren; deel 2 mag later, vóór de deadline.</p>
+    <p>Wie vraagt hoe hij inlevert: kijk eerst onder de vragen van de laatste stap.</p>
+    <p><strong>Vergeet niet</strong> het adres op deze dia aan te passen als de repository anders heet.</p>
+  </template>
+</section>
+
+<!-- 10 · exitvraag -->
+<section class="slide met-mascotte" data-answer>
+  <img class="mascotte" src="assets/mascotte/dalton_hulp.webp" alt="" width="240" height="240">
+  <p class="kicker">Afsluiten · laatste minuut</p>
+  <h2 style="margin-bottom:10px">Eén vraag voor je vertrekt</h2>
+  <div class="qcol">
+    <p class="qhead">Het onthaal mailt 40 klanten, met al hun adressen in Aan. Wat is het probleem?</p>
+    <div class="opts">
+      <div class="opt"><span class="n">A</span>Niets</div>
+      <div class="opt right"><span class="n">B</span>Iedereen ziet de adressen van de anderen</div>
+      <div class="opt"><span class="n">C</span>De mail komt niet aan</div>
+    </div>
+  </div>
+  <p class="answer">Iedereen ziet alle adressen, en dat zijn persoonsgegevens. Zet ze in Bcc.</p>
+  <p style="margin-top:6px;font-size:25px"><strong>Vertrek je? Log uit, of druk op Windows + L.</strong><br>Volgende les: <strong>Phishing of echt?</strong></p>
+  <template class="note">
+    <p><strong>Afsluiting, laatste minuut van de keuzewerktijd.</strong> Laat twee of drie leerlingen antwoorden, en druk dan op → voor het antwoord. Wie A kiest, ziet het privacyprobleem nog niet: onthoud wie dat is, en begin er volgende keer mee.</p>
+    <p>Zeg mondeling dat wie niet klaar is, toch inlevert.</p>
+    <p><strong>Vertrekken:</strong> iedereen logt uit, of drukt op Windows + L.</p>
+    <p>Na de les: kijk in de werkdocumenten naar deel 3: staan de jobstudenten in Bcc en Tom in Cc? Is Aan leeg? Zit de bijlage erbij, en zegt de tekst het? Staat er overal u?</p>
+  </template>
+</section>
+
+</div></div>
+<div class="notes" id="notes"></div>
+<script src="js/slides.js"></script>
+</body>
+</html>

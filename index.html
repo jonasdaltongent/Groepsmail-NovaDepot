@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lespagina · Les 12 · Aan, CC, BCC en een bijlage · NovaDepot</title>
+  <link rel="icon" href="assets/logos/lespagina-icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-storage="novadepot_groepsmail_v1_" data-modus-start="kort" data-laatste-stap="5" data-ai-hulp="uit">
+
+<!-- Pictogrammen: eenvoudige lijntekeningen, eigen werk. Gebruik: een svg met class "ic" en daarin use met href naar het symbool. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4 2.5 4H5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 10"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01" stroke-width="3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.5c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v10a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 14v6h16v-6"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V6a1.5 1.5 0 0 1 3 0v5"/><path d="M11 10.5V4.5a1.5 1.5 0 0 1 3 0v6"/><path d="M14 10.5V6a1.5 1.5 0 0 1 3 0v7.5"/><path d="M8 11.5l-1.5-1.5a1.6 1.6 0 0 0-2.3 2.3l3.6 4.2A6.5 6.5 0 0 0 17 13.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2a5 5 0 0 1 5 5"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-hash" viewBox="0 0 24 24"><path d="M9.5 4L7.5 20M16.5 4l-2 16M4 9h16M3.5 15h16"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 7h9M4 12h6M4 17h3"/><path d="M17 5v14M14 16l3 3 3-3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></symbol>
+</svg>
+
+<div class="teacher-banner">Leraarweergave: de roze kaders tonen waar je een screenshot kan plaatsen. Leerlingen zien die kaders niet.</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" title="Naar het begin van de les">
+      <img src="assets/novadepot-logo.svg" alt="NovaDepot">
+      <span class="brand-lesson">Les 12 · Aan, CC, BCC en een bijlage</span>
+    </a>
+    <span class="topbar-spacer"></span>
+    <img class="dalton-mark" src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent">
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ LINKS: de route ============ -->
+  <nav class="route" aria-label="Stappenplan">
+    <p class="route-title">Stappenplan</p>
+    <button class="nav-btn" type="button" data-step="start"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-flag"/></svg></span><span class="nav-lbl">Start</span></button>
+    <button class="nav-btn" type="button" data-step="theorie"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span class="nav-lbl">Theoriekaart</span></button>
+
+    <p class="route-group">Wie krijgt de mail?</p>
+    <button class="nav-btn" type="button" data-step="1"><span class="nav-num"><span class="nav-n">1</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Klaarzetten</span></button>
+    <button class="nav-btn" type="button" data-step="2"><span class="nav-num"><span class="nav-n">2</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Aan, Cc of Bcc?</span></button>
+    <p class="route-group">De mail van Lotte</p>
+    <button class="nav-btn" type="button" data-step="3"><span class="nav-num"><span class="nav-n">3</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De adressen en de bijlage</span></button>
+    <button class="nav-btn" type="button" data-step="4"><span class="nav-num"><span class="nav-n">4</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De tekst van de mail</span></button>
+
+    <button class="nav-btn" type="button" data-step="5"><span class="nav-num"><span class="nav-n">5</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Nalezen en inleveren</span></button>
+    <button class="nav-btn extra" type="button" data-step="extra"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="nav-lbl">Extra</span></button>
+  </nav>
+
+  <!-- ============ MIDDEN: één stap tegelijk ============ -->
+  <main id="main">
+
+        <!-- ===== START ===== -->
+    <section class="pane" id="pane-start" aria-labelledby="h-start">
+      <article class="card">
+        <header class="card-head met-mascotte">
+          <div>
+            <div class="tags"><span class="tag tag-where">Toegepaste Informatica · les 12</span></div>
+            <h1 id="h-start">Aan, CC, BCC en een bijlage</h1>
+          </div>
+          <img class="mascotte-kop" src="assets/mascotte/dalton_welkom.webp" alt="" width="120" height="120">
+        </header>
+        <div class="card-body">
+          <p class="intro">Lotte van de personeelsdienst van NovaDepot wil de onthaalbrochure naar vijf nieuwe jobstudenten mailen, tegelijk. Wie komt in Aan, wie in Cc en wie in Bcc? Jij helpt haar: eerst kiezen, dan de mail schrijven, met de brochure als bijlage.</p>
+
+          <h2 class="sec">Wat heb je nodig?</h2>
+          <ol class="nodig">
+            <li class="nodig-item">
+              <div class="mock mock-opdracht" aria-hidden="true">
+                <div class="mo-midden">
+                  <div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 2 — Aan, CC, BCC en een bijlage</div>
+                  <div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 12</span></div>
+                </div>
+                <div class="mo-werk">
+                  <div class="mo-werk-kop">Jouw werk</div>
+                  <div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO2_Aan-CC-BCC-en-een-bijlage</span></div>
+                  <div class="mo-knop">Inleveren</div>
+                </div>
+              </div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/classroom.svg" alt="">De opdracht in Google Classroom</p>
+              <p class="nodig-uitleg">Hier begin je. Hier lever je in.</p>
+            </li>
+            <li class="nodig-item">
+              <div class="mock mock-lespagina" aria-hidden="true">
+                <div class="ml-balk"></div>
+                <div class="ml-midden">
+                  <div class="ml-route"><span></span><span></span><span></span><span></span></div>
+                  <div class="ml-stap"><span class="ml-tag">Stap 1</span><span class="ml-lijn"></span><span class="ml-lijn kort"></span><span class="ml-lijn"></span></div>
+                </div>
+                <div class="ml-hier">Je bent hier</div>
+              </div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/lespagina.webp" alt="">Deze lespagina</p>
+              <p class="nodig-uitleg">Hier lees je wat je moet doen, stap voor stap.</p>
+            </li>
+            <li class="nodig-item inleveren">
+              <div class="mock mock-werkdocument" aria-hidden="true"><div class="mw-balk"><img class="logo" src="assets/logos/docs.svg" alt="">CO2_Aan-CC-BCC-en-een-bijlage</div><div class="mw-blad"><div class="mw-venster"><div class="mw-kop">Nieuw bericht</div><div class="mw-veld">Aan</div><div class="mw-veld">Cc</div><div class="mw-veld">Bcc</div><div class="mw-veld">Onderwerp</div><div class="mw-veld">Bijlage</div><div class="mw-tekst"><span></span><span class="kort"></span></div></div></div></div>
+              <p class="nodig-naam"><img class="logo" src="assets/logos/docs.svg" alt="">Je werkdocument CO2</p>
+              <p class="nodig-uitleg">Hier schrijf je. Dit lever je in.</p>
+            </li>
+          </ol>
+
+          <h2 class="sec">Dit maak je vandaag</h2>
+          <p class="nodig-noot" style="margin-top:0">Een zakelijke mail voor Lotte, naar vijf mensen tegelijk, met een bijlage. Je schrijft ze in je werkdocument: er wordt niets verstuurd.</p>
+          <div class="mailbouw" role="img" aria-label="Tekening van de mail die je maakt: een venster Nieuw bericht met Aan, Cc, Bcc, Onderwerp en Bijlage (een chip met een pdf), en zes stukken met een naam en balkjes: aanspreking, inleiding, de boodschap, slot, slotgroet, handtekening."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><i class="kort"></i></div><div class="mb-veld"><span class="mb-lbl">Cc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-chip"><b>PDF</b><i></i></span></div><div class="mb-rij"><span class="mb-naam"><b>1</b>Aanspreking</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>2</b>Inleiding</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>3</b>De boodschap</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>4</b>Slot</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>5</b>Slotgroet</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>6</b>Handtekening</span><span class="mb-balk"><i></i><i class="mid"></i></span></div></div>
+
+          <h2 class="sec">Na deze les kan je</h2>
+          <ul class="doelen">
+            <li>kiezen wie in Aan, Cc of Bcc komt, en zeggen waarom;</li>
+            <li>uitleggen wie welk adres ziet als er mensen in Bcc staan;</li>
+            <li>een zakelijke groepsmail schrijven met de juiste ontvangers, een precies onderwerp en een bijlage.</li>
+          </ul>
+
+          <h2 class="sec">Vast? Probeer het in deze volgorde</h2>
+          <ol class="vast">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><span>Klik in de stap op <em>Toon stapjes</em></span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><span>Je buur</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-hand"/></svg><span>Je leraar</span></li>
+          </ol>
+
+          <p class="start-cta"><button class="btn btn-primary" type="button" data-goto="1">Start met stap 1 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== THEORIEKAART ===== -->
+    <section class="pane" id="pane-theorie" aria-labelledby="h-theorie">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Spiekbriefje</span></div>
+          <h2 id="h-theorie">Theoriekaart</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Alles op één plek. Kom hier terug als je iets niet meer weet.</p>
+
+          <div class="t-grid">
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>Zo werkt elke les</h3>
+              <ul>
+                <li>Je start in Classroom, bij de opdracht van vandaag.</li>
+                <li>In de opdracht staan de lespagina en je werkdocument.</li>
+                <li>Klaar? Doe de zelftest in de laatste stap. Dan zie je hoe je inlevert.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Aan, Cc of Bcc?</h3>
+              <ul>
+                <li><strong>Aan</strong>: wie de mail moet lezen en iets moet doen.</li>
+                <li><strong>Cc</strong>: wie het alleen moet weten. Die persoon doet niets.</li>
+                <li><strong>Bcc</strong>: een groep die elkaars adres niet mag of hoeft te kennen.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg>Wie ziet welk adres?</h3>
+              <ul>
+                <li>Iedereen ziet de adressen in <strong>Aan</strong> en <strong>Cc</strong>.</li>
+                <li>Wie in <strong>Bcc</strong> staat, ziet Aan en Cc, maar <strong>niet</strong> de andere adressen in Bcc.</li>
+                <li>De mensen in Aan en Cc weten niet dat iemand in Bcc staat.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg>Een groep, of collega's?</h3>
+              <ul>
+                <li>Een groep die elkaar niet kent: alles in <strong>Bcc</strong>. Staat iedereen in Bcc, dan blijft <strong>Aan leeg</strong>.</li>
+                <li>Collega's die samenwerken, kennen elkaars adres: zij mogen gewoon in <strong>Aan</strong>.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>Een e-mailadres is een persoonsgegeven</h3>
+              <ul>
+                <li>Een privéadres hoort bij een persoon. Een bedrijf gaat er zorgvuldig mee om.</li>
+                <li>Mail je mensen die elkaar niet kennen? Zet hun adressen in Bcc: zo geef je geen adres door aan een ander.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Een bijlage</h3>
+              <ul>
+                <li>Zeg in je tekst dat er een bijlage is, en wat het is: <em>In de bijlage vindt u …</em></li>
+                <li>Kijk na of de bijlage er echt bij zit, vóór je verstuurt.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>Een bijlage in je werkdocument</h3>
+              <ul>
+                <li>Klik in het vak <strong>Bijlage</strong>. Typ <strong>@</strong> en een stuk van de naam van je pdf, bijvoorbeeld <em>TV3</em>.</li>
+                <li>Klik je pdf in de lijst: er komt een <strong>chip</strong>.</li>
+                <li>Vind je ze niet? Typ de naam van het bestand.</li>
+              </ul>
+            </section>
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg>De zes bouwstenen</h3>
+              <ol>
+                <li><strong>Aanspreking</strong></li>
+                <li><strong>Inleiding</strong>: wie ben je, waarom mail je?</li>
+                <li><strong>De boodschap</strong>: wat moeten ze weten?</li>
+                <li><strong>Slot</strong>: tegen wanneer, en bedanken</li>
+                <li><strong>Slotgroet</strong></li>
+                <li><strong>Handtekening</strong></li>
+              </ol>
+            </section>
+            <section class="t-card wide">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Woorden</h3>
+              <table class="t-rows">
+                <tr><th>ontvanger</th><td>iemand die de mail krijgt</td></tr>
+                <tr><th>Aan</th><td>het veld voor wie iets moet doen</td></tr>
+                <tr><th>Cc</th><td>het veld voor wie een kopie krijgt, ter informatie</td></tr>
+                <tr><th>Bcc</th><td>het veld waarin niemand de andere adressen ziet</td></tr>
+                <tr><th>bijlage</th><td>een bestand dat je met je mail meestuurt, zoals een pdf</td></tr>
+                <tr><th>groepsmail</th><td>een mail die je naar meer mensen tegelijk stuurt</td></tr>
+                <tr><th>persoonsgegeven</th><td>een gegeven dat bij een persoon hoort, zoals een e-mailadres</td></tr>
+              </table>
+            </section>
+            <section class="t-card wide warn">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Veelgemaakte fouten</h3>
+              <ul>
+                <li>Een groep die elkaar niet kent in Aan of Cc zetten: iedereen ziet dan alle adressen.</li>
+                <li>Tom in Bcc of in Aan zetten, terwijl hij het alleen moet weten.</li>
+                <li>Denken dat iedereen die in Bcc staat de anderen ziet, of dat niemand iets ziet.</li>
+                <li>Een bijlage meesturen, maar in de tekst niets zeggen. Of <em>Zie bijlage!!!</em> schrijven.</li>
+                <li>Een adres met één letter fout: die mail komt niet aan.</li>
+                <li><em>U</em> en <em>je</em> door elkaar, chattaal of emoji's.</li>
+                <li>Geen naam onder de mail.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== STAP 1 ===== -->
+    <section class="pane" id="pane-1" aria-labelledby="h-1">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 1</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument</span></div>
+            <h2 id="h-1">Klaarzetten</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Je opent je werkdocument en leest wat Lotte vraagt.</p>
+          <div class="todo-box">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+            <ol class="doe">
+<li><details class="stapjes" open><summary><span class="doe-tekst">Open je werkdocument <strong>CO2_Aan-CC-BCC-en-een-bijlage</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Kijk in je opdracht in <strong class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</strong> rechts, bij <strong>Jouw werk</strong>.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht in Google Classroom. Rechts het vak Jouw werk, in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 2 — Aan, CC, BCC en een bijlage</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 12</span></div></div><div class="mo-werk wijs"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO2_Aan-CC-BCC-en-een-bijlage</span></div><div class="mo-knop">Inleveren</div></div></div></li>
+<li><p>Klik op <strong>CO2_Aan-CC-BCC-en-een-bijlage</strong>. Jouw naam staat in de titel.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht. Bij Jouw werk staat het werkdocument CO2 in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 2 — Aan, CC, BCC en een bijlage</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 12</span></div></div><div class="mo-werk"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip wijs"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO2_Aan-CC-BCC-en-een-bijlage</span></div><div class="mo-knop">Inleveren</div></div></div></li>
+</ol>
+</details></li>
+<li><span class="doe-tekst">Lees het kader bovenaan je werkdocument: wie krijgt de mail, wie moet het alleen weten, en wat moet erin?</span><span class="sub">Je gebruikt de feiten in de volgende stappen.</span></li>
+            </ol>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Staat jouw naam niet in de titel?</strong> Dan opende je niet je eigen kopie. Klik in je opdracht rechts, bij <em>Jouw werk</em>.</p></div>
+        </div>
+        <footer class="card-nav">
+  <button class="btn" type="button" data-goto="start"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Start</button>
+  <button class="btn btn-primary" type="button" data-goto="2">Stap 2 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+    <!-- ===== STAP 2 ===== -->
+    <section class="pane" id="pane-2" aria-labelledby="h-2">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 2</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 1 en 2</span></div>
+            <h2 id="h-2">Aan, Cc of Bcc?</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Lotte mailt vijf mensen die elkaar niet kennen. Wie moet iets doen, wie moet het alleen weten, en wie mag de adressen van de anderen niet zien?</p>
+          <div class="todo-box">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+            <ol class="doe">
+<li><span class="doe-tekst">Lees het infokader hieronder.</span><span class="sub">Daar staat wat Aan, Cc en Bcc betekenen.</span></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Vul de tabel van <strong>deel 1</strong> in: bij elke situatie het juiste veld.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Kijk naar rij 1. Die is al ingevuld: dat deden we samen.</p><table class="teken-wd" role="img" aria-label="Tekening van de tabel in deel 1. Rij 1 is al ingevuld, rij 2 heeft een lichtblauw vak."><tr><th>Situatie</th><th>Wie?</th><th>Aan, Cc of Bcc?</th></tr><tr><td class="grijs">Tom vraagt Kim Wouters van De Melkkan om een levering te verplaatsen.</td><td class="grijs">Kim Wouters</td><td class="grijs">Aan — zij moet iets doen</td></tr><tr><td>Tom wil dat Sara Claes (preventie) weet dat de koelcel onderhoud krijgt. Sara moet niets doen.</td><td>Sara Claes</td><td class="vak breed"></td></tr></table></li>
+<li><p>Lees de situatie in rij 2. Typ in het lichtblauwe vak <strong>Aan</strong>, <strong>Cc</strong> of <strong>Bcc</strong>.<span class="sub">Alleen het veld. Een reden hoef je hier niet te schrijven.</span></p><table class="teken-wd" role="img" aria-label="Tekening van de tabel in deel 1. Het lichtblauwe vak in rij 2 staat in een rood kader."><tr><th>Situatie</th><th>Wie?</th><th>Aan, Cc of Bcc?</th></tr><tr><td class="grijs">Tom vraagt Kim Wouters van De Melkkan om een levering te verplaatsen.</td><td class="grijs">Kim Wouters</td><td class="grijs">Aan — zij moet iets doen</td></tr><tr><td>Tom wil dat Sara Claes (preventie) weet dat de koelcel onderhoud krijgt. Sara moet niets doen.</td><td>Sara Claes</td><td class="vak breed wijs"></td></tr></table></li>
+<li><p>Doe hetzelfde in rij 3, 4 en 5.</p></li>
+</ol>
+</details></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Lees de mail van <strong>Lotte</strong> in <strong>deel 2</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Zo staat de mail van Lotte in je werkdocument. Hij is nog niet verstuurd.<span class="sub">Kijk wie in Aan, Cc en Bcc staat.</span></p><div class="mail mini-mail" role="group" aria-label="De mail van Lotte, zoals hij in deel 2 staat: Aan leeg, Tom in Cc, de vijf jobstudenten in Bcc"><div class="mail-kop">Nieuw bericht</div><div class="mail-veld"><span class="mail-lbl">Van</span><span>lotte.maes@novadepot.example</span></div><div class="mail-veld"><span class="mail-lbl">Aan</span><span class="mail-leeg">(leeg)</span></div><div class="mail-veld"><span class="mail-lbl">Cc</span><span>tom.peeters@novadepot.example</span></div><div class="mail-veld"><span class="mail-lbl">Bcc</span><span>lina.haddad@mail.example<br>emre.yilmaz@mail.example<br>noor.verbeke@mail.example<br>kobe.desmet@mail.example<br>ayla.janssens@mail.example</span></div><div class="mail-veld"><span class="mail-lbl">Onderwerp</span><span class="mail-leeg">…</span></div><div class="mail-tekst"><p class="mail-leeg">De tekst van de mail schrijf je zelf in deel 3.</p></div></div></li>
+</ol>
+</details></li>
+<li><span class="doe-tekst">Beantwoord <strong>a</strong>, <strong>b</strong> en <strong>c</strong> in deel 2.</span><span class="sub">Bij a en b schrijf je ja of nee. Bij c schrijf je één zin: kort mag.</span></li>
+            </ol>
+          </div>
+          <div class="info" role="group" aria-labelledby="info-abc">
+  <div class="info-kop"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span class="info-soort">Info</span><h3 id="info-abc">Aan, Cc of Bcc?</h3><span class="info-bij">bij deel 1 en 2</span></div>
+  <div class="info-body">
+<div class="ogen" role="img" aria-label="Tekening van drie vakjes: Aan, Cc en Bcc. Bij Aan en Cc staat een open oog: iedereen ziet dit adres. Bij Bcc staat een doorgestreept oog: niemand ziet de andere adressen in Bcc."><div class="og aan"><span class="og-naam">Aan</span><span class="og-oog"><svg aria-hidden="true"><use href="#i-eye"/></svg></span><span class="og-wie">Moet iets doen</span><span class="og-tekst">Iedereen ziet dit adres.</span></div><div class="og cc"><span class="og-naam">Cc</span><span class="og-oog"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg></span><span class="og-wie">Moet het weten</span><span class="og-tekst">Iedereen ziet dit adres.</span></div><div class="og bcc"><span class="og-naam">Bcc</span><span class="og-oog"><svg class="ic" aria-hidden="true"><use href="#i-eye-off"/></svg></span><span class="og-wie">Mag de anderen niet zien</span><span class="og-tekst">Niemand ziet de andere adressen in Bcc.</span></div></div>          <ul>
+            <li><strong>Aan</strong>: wie de hele mail moet lezen en iets moet doen.</li>
+            <li><strong>Cc</strong>: wie het moet weten, maar niets moet doen. Iedereen ziet dit adres.</li>
+            <li><strong>Bcc</strong>: een groep die elkaars adres niet mag of hoeft te zien. Niemand ziet de andere adressen in Bcc.</li>
+            <li>Staat iedereen in Bcc? Dan mag <strong>Aan leeg</strong> blijven.</li>
+            <li>Een e-mailadres is een <strong>persoonsgegeven</strong>: het hoort bij een persoon.</li>
+            <li>Collega's die samenwerken, mogen gewoon in <strong>Aan</strong>.</li>
+          </ul>
+  </div>
+</div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Twijfel je tussen Aan en Cc?</strong> Vraag je af: moet die persoon iets doen?</p></div>
+        </div>
+        <footer class="card-nav">
+  <button class="btn" type="button" data-goto="1"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 1</button>
+  <button class="btn btn-primary" type="button" data-goto="3">Stap 3 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+    <!-- ===== STAP 3 ===== -->
+    <section class="pane" id="pane-3" aria-labelledby="h-3">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 3</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 3: het venster</span></div>
+            <h2 id="h-3">De adressen en de bijlage</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Nu vul je de bovenkant van de mail van Lotte in: wie ze krijgen, waarover ze gaat en welke bijlage erbij zit.</p>
+          <div class="todo-box">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+            <ol class="doe">
+<li><details class="stapjes" open><summary><span class="doe-tekst">Laat <strong>Aan</strong> leeg.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Laat het vak naast <strong>Aan</strong> leeg.<span class="sub">Iedereen van de groep staat in Bcc.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Aan staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak wijs"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Aan</p><dl><dt>Waarom leeg</dt><dd>iedereen van de groep staat in Bcc</dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Typ het adres van <strong>Tom</strong> in <strong>Cc</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in het vak naast <strong>Cc</strong>. Typ het adres van Tom.<span class="sub">Het adres staat in het kader bovenaan je werkdocument.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Cc staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak wijs"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Cc</p><dl><dt>Tom Peeters</dt><dd>tom.peeters@novadepot.example <span class="mag">Mag je overnemen</span></dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Typ de vijf adressen van de jobstudenten in <strong>Bcc</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in het vak naast <strong>Bcc</strong>. Typ de vijf adressen, met een komma ertussen.<span class="sub">Kopieer ze uit het kader bovenaan je werkdocument: dan maak je geen tikfouten.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Bcc staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak typ">tom.peeters@novadepot.example</span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid wijs"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Bcc</p><dl><dt>Wie</dt><dd>de vijf jobstudenten uit het kader</dd><dt>Let op</dt><dd>kijk elk adres na: één letter fout en die mail komt niet aan</dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Typ het <strong>onderwerp</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in het vak naast <strong>Onderwerp</strong>. Typ waarover de mail gaat.<span class="sub">Kort: geen zin, geen groet.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Onderwerp staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak wijs"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Onderwerp</p><dl><dt>Waarover</dt><dd>de onthaalbrochure en de eerste werkdag, 21 december</dd><dt>Zo begin je</dt><dd><em>Onthaalbrochure en …</em> <span class="mag">Mag je overnemen</span></dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Voeg de <strong>bijlage</strong> toe: je pdf van de onthaalbrochure.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in het vak naast <strong>Bijlage</strong>. Typ <strong>@</strong>.<span class="sub">Er verschijnt een lijst met suggesties.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Bijlage staat in een rood kader, met daarin het teken @."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak typ wijs">@</span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+<li><p>Typ er een stuk van de naam van je pdf achter: <strong>TV3</strong>.<span class="sub">Je pdf uit les 04 begint zo.</span></p><div class="sugg" role="img" aria-label="Tekening van de lijst met suggesties na @TV3. Bovenaan het getypte stuk, daaronder je pdf op een blauwe regel."><div class="kop">@TV3</div><div class="aan"><b>PDF</b>TV3_Documentopmaak - …</div></div></li>
+<li><p>Klik in de lijst op je pdf.<span class="sub">Er komt een chip in het vak. Vind je je pdf niet? Typ dan de naam: <em>Onthaalbrochure NovaDepot.pdf</em></span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. In het vak naast Bijlage staat een chip met de naam van een pdf, in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak chip wijs"><span class="mb-chip"><b>PDF</b>TV3_Documentopmaak - …</span></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Bijlage</p><dl><dt>Welk bestand</dt><dd>de pdf van de onthaalbrochure, uit les 04</dd><dt>Eerste letters</dt><dd><em>TV3</em></dd></dl></div></li>
+            </ol>
+          </div>
+          <p class="nodig-noot">Ziet het bij jou er zo uit? Aan is leeg, Cc heeft één adres en Bcc vijf; er staat een onderwerp en een chip bij Bijlage.</p>
+          <div class="mailbouw" role="img" aria-label="Tekening van het ingevulde venster: Aan is leeg, Cc heeft één adres, Bcc heeft vijf adressen, Onderwerp is ingevuld en bij Bijlage staat een chip. De zes stukken van de tekst zijn nog leeg."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span style="font-style:italic;font-size:.8rem">(leeg)</span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><i class="kort"></i></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-chip"><b>PDF</b><i></i></span></div></div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Staat er een jobstudent in Aan of Cc?</strong> Dan ziet iedereen dat adres. Zet het in Bcc.</p></div>
+        </div>
+        <footer class="card-nav">
+  <button class="btn" type="button" data-goto="2"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 2</button>
+  <button class="btn btn-primary" type="button" data-goto="4">Stap 4 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+    <!-- ===== STAP 4 ===== -->
+    <section class="pane" id="pane-4" aria-labelledby="h-4">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 4</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 3: de zes vakken</span></div>
+            <h2 id="h-4">De tekst van de mail</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Nu schrijf je de tekst van de mail <strong>voor Lotte</strong>, bouwsteen per bouwsteen. Bij elke bouwsteen staan de feiten: schrijf er zelf zinnen mee. Lotte leest de mail na en verstuurt ze zelf.</p>
+          <div class="todo-box">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+            <ol class="doe">
+<li><details class="stapjes" open><summary><span class="doe-tekst">Schrijf de <strong>aanspreking</strong> en de <strong>inleiding</strong>.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik naast <strong>Aanspreking</strong>. Typ de aanspreking.<span class="sub">Je schrijft aan een groep.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Aanspreking staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak wijs"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+<li><p>Klik naast <strong>Inleiding</strong>. Schrijf in één of twee zinnen wie schrijft en waarom.<span class="sub">Je schrijft voor Lotte, niet voor jezelf. Begin niet met <em>ik</em>.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Inleiding staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid wijs"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Aanspreking</p><dl><dt>Aan wie</dt><dd>de vijf nieuwe jobstudenten</dd><dt>Zo schrijf je het</dt><dd><em>Beste jobstudenten,</em> <span class="mag">Mag je overnemen</span></dd></dl><p class="feiten-kop">Inleiding</p><dl><dt>Wie schrijft</dt><dd>Lotte Maes, van de personeelsdienst van NovaDepot</dd><dt>Waarom</dt><dd>welkom, en de onthaalbrochure</dd><dt>Zo begin je</dt><dd><em>Mijn naam is Lotte Maes, van de personeelsdienst van NovaDepot. …</em> <span class="mag">Mag je overnemen</span></dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Schrijf <strong>de boodschap</strong>: de brochure en de eerste werkdag.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik naast <strong>De boodschap</strong>. Zeg dat de brochure in de bijlage zit, en schrijf alles over de eerste werkdag.<span class="sub">Gebruik alle feiten hieronder.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het grote vak naast De boodschap staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot wijs"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">De boodschap</p><dl><dt>Bijlage</dt><dd>de onthaalbrochure</dd><dt>Eerste werkdag</dt><dd>maandag 21 december</dd><dt>Uur en plaats</dt><dd>7.30 uur, aan het onthaal</dd><dt>Meebrengen</dt><dd>je identiteitskaart</dd><dt>Daarna</dt><dd>om 8.00 uur infosessie in de kantine</dd><dt>Zo begin je</dt><dd><em>In de bijlage vindt u …</em> · <em>Uw eerste werkdag is …</em> <span class="mag">Mag je overnemen</span></dd></dl></div></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Schrijf het <strong>slot</strong>, de <strong>slotgroet</strong> en de <strong>handtekening</strong> van Lotte.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik naast <strong>Slot</strong>. Vraag tegen wanneer ze antwoorden, en bedank.</p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Slot staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid wijs"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+<li><p>Klik naast <strong>Slotgroet</strong>. Typ de slotgroet, zonder afkorting.</p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Slotgroet staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak wijs"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid"></span></div></div></li>
+<li><p>Klik naast <strong>Handtekening</strong>. Typ de gegevens van Lotte.<span class="sub">Je schrijft voor Lotte: niet je eigen naam.</span></p><div class="mailbouw werk" role="img" aria-label="Tekening van het venster Nieuw bericht in deel 3. Het vak naast Handtekening staat in een rood kader."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><span class="mb-vak mid"></span></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><span class="mb-vak"></span></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Aanspreking</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Inleiding</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">De boodschap</span><span class="mb-vak groot"></span></div><div class="mb-rij"><span class="mb-naam">Slot</span><span class="mb-vak mid"></span></div><div class="mb-rij"><span class="mb-naam">Slotgroet</span><span class="mb-vak"></span></div><div class="mb-rij"><span class="mb-naam">Handtekening</span><span class="mb-vak mid wijs"></span></div></div></li>
+</ol>
+</details>
+<div class="feiten" role="group" aria-label="Dit heb je nodig"><p class="feiten-kop">Slot</p><dl><dt>Antwoord nodig</dt><dd>tegen vrijdag 11 december</dd><dt>Zo vraag je het</dt><dd><em>Kunt u mij tegen … laten weten dat u komt?</em> <span class="mag">Mag je overnemen</span></dd><dt>Bedanken</dt><dd><em>Alvast …</em></dd></dl><p class="feiten-kop">Slotgroet</p><dl><dt>Voluit</dt><dd><em>Met vriendelijke …</em> en een komma</dd></dl><p class="feiten-kop">Handtekening</p><dl><dt>Naam</dt><dd>Lotte Maes</dd><dt>Dienst</dt><dd>Personeelsdienst</dd><dt>Bedrijf</dt><dd>NovaDepot</dd><dt>Toestel</dt><dd>205</dd></dl></div></li>
+<li><span class="doe-tekst">Lees de mail nog eens: staat overal <strong>u</strong>?</span><span class="sub">Schrijf overal u, ook al zijn het jongeren: het is een zakelijke mail van NovaDepot.</span></li>
+            </ol>
+          </div>
+          <p class="nodig-noot">Ziet het bij jou er zo uit? Alle vakken zijn ingevuld, in deze volgorde.</p>
+          <div class="mailbouw" role="img" aria-label="Tekening van een ingevulde mail: Aan leeg, Cc, Bcc, Onderwerp en Bijlage zijn ingevuld, en de zes bouwstenen staan in volgorde. Bij elk label staan balkjes in plaats van tekst."><div class="mb-kop">Nieuw bericht</div><div class="mb-veld"><span class="mb-lbl">Aan</span><span style="font-style:italic;font-size:.8rem">(leeg)</span></div><div class="mb-veld"><span class="mb-lbl">Cc</span><i class="kort"></i></div><div class="mb-veld"><span class="mb-lbl">Bcc</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Onderwerp</span><i></i></div><div class="mb-veld"><span class="mb-lbl">Bijlage</span><span class="mb-chip"><b>PDF</b><i></i></span></div><div class="mb-rij"><span class="mb-naam"><b>1</b>Aanspreking</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>2</b>Inleiding</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>3</b>De boodschap</span><span class="mb-balk"><i></i><i class="mid"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>4</b>Slot</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>5</b>Slotgroet</span><span class="mb-balk"><i></i><i class="kort"></i></span></div><div class="mb-rij"><span class="mb-naam"><b>6</b>Handtekening</span><span class="mb-balk"><i></i><i class="mid"></i></span></div></div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Weet je niet hoe je begint?</strong> Begin met de zinsbegin bij de feiten en maak de zin af.</p></div>
+        </div>
+        <footer class="card-nav">
+  <button class="btn" type="button" data-goto="3"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 3</button>
+  <button class="btn btn-primary" type="button" data-goto="5">Stap 5 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+    <!-- ===== STAP 5 ===== -->
+    <section class="pane" id="pane-5" aria-labelledby="h-5">
+      <article class="card">
+        <header class="card-head met-mascotte">
+          <div>
+            <div class="tags"><span class="tag tag-step">Stap 5</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Opdracht</span><span class="tag tag-where"><img class="logo" src="assets/logos/docs.svg" alt=""> Werkdocument, deel 4</span></div>
+            <h2 id="h-5">Nalezen en inleveren</h2>
+          </div>
+          <img class="mascotte-kop" src="assets/mascotte/dalton_inleveren.webp" alt="" width="120" height="120">
+        </header>
+        <div class="card-body">
+          <p class="intro">Lees je mail na en test jezelf. Alle drie juist? Dan zie je hoe je inlevert.</p>
+          <div class="todo-box">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3></div>
+            <ol class="doe">
+<li><span class="doe-tekst">Lees je mail nog één keer, woord voor woord.</span><span class="sub">Staat er geen jobstudent in Aan of Cc? Zit de bijlage erbij, en zegt je tekst dat ze erbij zit? Staat overal <em>u</em>?</span></li>
+<li><span class="doe-tekst">Doe de <strong>zelftest</strong> hieronder.</span><span class="sub">Alle drie juist? Dan zie je hoe je inlevert.</span></li>
+            </ol>
+          </div>
+          <h3 class="quiz-kop">Zelftest: drie vragen</h3>
+          <div class="quiz">
+            <div class="quiz-q" data-ok="Juist: in Bcc ziet niemand de adressen van de anderen." data-nok="Nog niet. Wie mag de adressen van de anderen niet zien?">
+              <p>1. Lotte mailt 30 klanten die elkaar niet kennen. Waar zet ze hun adressen?</p>
+              <div class="opts">
+                <button type="button">Aan</button><button type="button">Cc</button><button type="button" data-right>Bcc</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist: hij ziet de afzender en Tom in Cc, maar niet de andere jobstudenten in Bcc." data-nok="Nog niet. Wie in Bcc staat, ziet Aan en Cc, maar niet de andere adressen in Bcc.">
+              <p>2. Emre staat in Bcc. Welke adressen ziet hij?</p>
+              <div class="opts">
+                <button type="button" data-right>Lotte (de afzender) en Tom (Cc)</button><button type="button">Lotte, Tom en de andere jobstudenten</button><button type="button">Geen enkel adres</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist: je zegt dat er een bijlage is, en wat het is." data-nok="Nog niet. Hoe weet de lezer dat er een bijlage is, en wat het is?">
+              <p>3. Wat schrijf je in je tekst als er een bijlage is?</p>
+              <div class="opts">
+                <button type="button"><em>Zie bijlage!!!</em></button><button type="button" data-right><em>In de bijlage vindt u de onthaalbrochure.</em></button><button type="button">Niets: ze zien het wel</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+          </div>
+          <p class="slot" aria-live="polite" data-codewoord="PAPERCLIP"><svg class="ic ic-dicht" aria-hidden="true"><use href="#i-lock"/></svg><svg class="ic ic-open" aria-hidden="true"><use href="#i-check-circle"/></svg><span class="slot-tekst">Beantwoord de drie vragen hierboven juist. Dan zie je hier hoe je inlevert.</span></p>
+          <div class="todo-box" data-na-zelftest="c5b">
+            <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Afwerken en inleveren</h3></div>
+            <ol class="doe">
+<li><details class="stapjes" open><summary><span class="doe-tekst">Typ het codewoord in je werkdocument.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Scroll naar <strong>Deel 4 — Nalezen</strong>. Typ het codewoord in het vak.<span class="sub">Het codewoord staat in de groene regel hierboven.</span></p><img class="mini" src="assets/stapjes/s5-codewoord.png" alt="Deel 4 Nalezen in het werkdocument: de vraag naar het codewoord van de zelftest, met het vak eronder in een rood kader." loading="lazy"></li>
+</ol>
+</details></li>
+<li><span class="doe-tekst">Loop de <strong>controletabel</strong> onderaan deel 4 na.</span><span class="sub">Typ een x bij wat klopt. Staat er iets open? Werk het eerst af.</span></li>
+<li><details class="stapjes" open><summary><span class="doe-tekst">Lever in.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+<ol class="klein">
+<li><p>Klik in je opdracht in <strong class="met-logo"><img class="logo" src="assets/logos/classroom.svg" alt="">Google Classroom</strong> rechts op <span class="ui">Inleveren</span>.</p><div class="mock mock-opdracht mini-mock" role="img" aria-label="Tekening van de opdracht. Bij Jouw werk staat de knop Inleveren in een rood kader."><div class="mo-midden"><div class="mo-titel"><img class="logo" src="assets/logos/classroom.svg" alt="">Communicatie 2 — Aan, CC, BCC en een bijlage</div><div class="mo-chip"><img class="logo" src="assets/logos/lespagina.webp" alt=""><span>Lespagina · Les 12</span></div></div><div class="mo-werk"><div class="mo-werk-kop">Jouw werk</div><div class="mo-chip"><img class="logo" src="assets/logos/docs.svg" alt=""><span>CO2_Aan-CC-BCC-en-een-bijlage</span></div><div class="mo-knop wijs">Inleveren</div></div></div></li>
+<li><p>Klik in het venster <em>Je werk inleveren?</em> nog eens op <span class="ui">Inleveren</span>.<span class="sub">Daarna staat er rechts <em>Ingeleverd</em>.</span></p></li>
+</ol>
+</details></li>
+            </ol>
+            <figure class="clip"><video src="assets/video/inleveren.mp4" poster="assets/video/inleveren.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechts, bij Jouw werk, op Inleveren klikken; in het venster Je werk inleveren? nog eens op Inleveren klikken; daarna staat er Ingeleverd."></video><figcaption>Filmpje van 10 seconden: zo lever je in. Het is een andere opdracht, de knoppen zijn dezelfde.</figcaption></figure>
+          </div>
+        </div>
+        <footer class="card-nav">
+  <button class="btn" type="button" data-goto="4"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 4</button>
+  <button class="btn btn-primary" type="button" data-goto="extra">Extra <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</footer>
+      </article>
+    </section>
+
+    <!-- ===== EXTRA ===== -->
+    <section class="pane" id="pane-extra" aria-labelledby="h-extra">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-extra">Extra · niet verplicht</span></div>
+          <h2 id="h-extra">Voor wie klaar is</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Begin hier pas nadat je hebt ingeleverd. Dit telt niet mee.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat kan je doen?</h3>
+            <ol class="todo">
+              <li><strong>Bekijk de naam van je pdf.</strong> Hij heet nog zoals in les 04. De jobstudenten zien die naam in de mail.</li>
+              <li><strong>Schrijf een betere naam</strong> in je werkdocument, onder <em>Extra</em>. Gebruik de afspraak van les 06: <em>Wat - Van wie</em>.</li>
+              <li><strong>Wil je dat je leraar je antwoord leest?</strong> Klik in je opdracht rechts op <span class="ui">Ongedaan maken</span> en daarna weer op <span class="ui">Inleveren</span>.</li>
+            </ol>
+          </div>
+          <div class="tip warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><p><strong>Klik je op Ongedaan maken?</strong> Klik daarna weer op Inleveren. Anders is je werk niet ingeleverd.</p></div>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="5"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 5</button>
+          <button class="btn" type="button" data-goto="start">Naar het begin</button>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ============ RECHTS: de checklist ============ -->
+  <aside class="checklist leeg" id="checklist" aria-labelledby="h-cl">
+    <div class="cl-head">
+      <h2 id="h-cl">Checklist</h2>
+      <div class="cl-bar" role="progressbar" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="cl-fill" id="clFill"></div></div>
+      <p class="cl-count" id="clCount">0 van 0 klaar</p>
+    </div>
+    <div class="cl-body">
+      <div class="cl-group" data-step="1"><h3>1 · Klaarzetten</h3>
+        <label class="cl-item"><input type="checkbox" id="c1a"><span>Werkdocument open, met mijn naam in de titel</span></label>
+        <label class="cl-item"><input type="checkbox" id="c1b"><span>Kader gelezen: wie krijgt de mail en wat moet erin</span></label>
+      </div>
+      <div class="cl-group" data-step="2"><h3>2 · Aan, Cc of Bcc?</h3>
+        <label class="cl-item"><input type="checkbox" id="c2a"><span>Infokader gelezen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2b"><span>Bij elke situatie in deel 1 het veld getypt</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2c"><span>De vragen a, b en c in deel 2 beantwoord</span></label>
+      </div>
+      <div class="cl-group" data-step="3"><h3>3 · De adressen en de bijlage</h3>
+        <label class="cl-item"><input type="checkbox" id="c3a"><span>Aan leeg, Tom in Cc</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3b"><span>De vijf jobstudenten in Bcc</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3c"><span>Onderwerp ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3d"><span>Bijlage toegevoegd (chip of de naam)</span></label>
+      </div>
+      <div class="cl-group" data-step="4"><h3>4 · De tekst van de mail</h3>
+        <label class="cl-item"><input type="checkbox" id="c4a"><span>Aanspreking en inleiding geschreven</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4b"><span>De boodschap met alle feiten van de eerste werkdag</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4c"><span>Slot, slotgroet en handtekening geschreven</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4d"><span>Overal u, geen chattaal en geen emoji's</span></label>
+      </div>
+      <div class="cl-group" data-step="5"><h3>5 · Nalezen en inleveren</h3>
+        <label class="cl-item"><input type="checkbox" id="c5a"><span>Mijn mail nog eens gelezen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5b"><span>Zelftest: alle drie juist</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5c"><span>Codewoord getypt, controletabel nagelezen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5d"><span>Werkdocument ingeleverd</span></label>
+      </div>
+    </div>
+    <div class="cl-foot">
+      <button class="btn cl-toggle" type="button" id="clToggle" aria-expanded="false">Toon alles</button>
+      <button class="btn" type="button" id="btnReset">Vinkjes wissen</button>
+      <p class="cl-note">Je vinkjes staan alleen op deze computer. Er wordt niets doorgestuurd.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ Klaar! ============ -->
+<div class="klaar-overlay" id="klaar" role="dialog" aria-modal="true" aria-labelledby="h-klaar" hidden>
+  <div class="klaar-card">
+    <img class="mascotte-klaar" src="assets/mascotte/dalton_succes.webp" alt="" width="150" height="150">
+    <h2 id="h-klaar">Lotte is geholpen!</h2>
+    <p>Alles is afgevinkt. Heb je nog tijd? Kijk dan bij <strong>Extra</strong>.</p>
+    <p>Vertrek je? <strong>Log uit</strong>, of druk op <span class="key">Windows</span> + <span class="key">L</span>.</p>
+    <button class="btn btn-primary" type="button" id="klaarSluit">Sluiten</button>
+  </div>
+</div>
+
+<footer class="site">
+  Toegepaste Informatica · GO! Dalton Gent · 2de graad Organisatie en logistiek · NovaDepot is een fictief bedrijf. Alle namen, nummers en e-mailadressen zijn verzonnen.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

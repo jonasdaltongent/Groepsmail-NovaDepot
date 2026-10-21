@@ -1,0 +1,33 @@
+{
+  "lesid": "novadepot-groepsmail",
+  "lesnr": "12",
+  "titel": "Communicatie 2 - Aan, CC, BCC en een bijlage (de onthaalbrochure naar de jobstudenten)",
+  "week": 9,
+  "schooljaar": "2026-2027",
+  "datum": "2026-10-27",
+  "_opmerking_datum": "Uur 1 van week 9: 4ORLOb di 27 okt (8ste uur), 3ORLO di 27 okt (9de uur), 4ORLOa wo 28 okt (4de uur).",
+  "klasgroepen": [
+    "ORLO"
+  ],
+  "_opmerking_klasgroepen": "De klasgroepcode moet 'ORLO' zijn: daarmee telt het blad 'ORLO' de regels op. De echte klasnamen staan hieronder.",
+  "klasnaam": "3ORLO, 4ORLOa, 4ORLOb",
+  "finaliteit": "arbeidsmarktgerichte finaliteit",
+  "lesduur_minuten": 50,
+  "evaluatie": "formatief (voorbereiding op E1, les 15)",
+  "deadline": "2026-10-30T20:00",
+  "bron": "https://github.com/jonasdaltongent/Groepsmail-NovaDepot",
+  "doelen": [
+    {
+      "code": "BV2_04.01",
+      "rol": "kern"
+    },
+    {
+      "code": "BV2_04.04",
+      "rol": "ondersteunend"
+    },
+    {
+      "code": "BK2_02.01",
+      "rol": "ondersteunend"
+    }
+  ]
+}
