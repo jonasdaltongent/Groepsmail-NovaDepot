@@ -418,7 +418,13 @@ naam onder de mail.
 
 ### Jonas' beslissingen bij het verbeteren
 
-- (nog geen)
+- 09-11-2026 (de voorstellen van de AI, door Jonas gekozen):
+  - Deel 2c: *Anders zien de anderen niet* = 0: de zin zegt niet dat het om de adressen gaat, en *anders* keert de
+    betekenis om.
+  - Deel 3, de ontvangers: een beschrijving zonder adres in *Aan* (*De vijf nieuwe jobstudenten*) telt niet als een
+    jobstudent in *Aan*: *Aan* 0, maar *Cc* en *Bcc* tellen gewoon, want niemand ziet een privéadres.
+  - Deel 3, de ontvangers: zijn *Aan*, *Cc* en *Bcc* alle drie leeg, dan is ook *Aan leeg* 0: de leerling vulde geen
+    ontvangers in.
 
 ## 23. Feedback
 
